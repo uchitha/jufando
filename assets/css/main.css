@@ -277,10 +277,19 @@ section {
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
+    padding-right: 200px;
+    background-color: #00B0F0;
+    height: 80px;
+  }
+
+  .logo {
+    max-height: 40px;
+    margin-left: auto;
   }
 
   .navbar ul {
     margin: 0;
+    margin-left: auto !important;
     padding: 0;
     display: flex;
     list-style: none;
