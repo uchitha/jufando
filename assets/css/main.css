@@ -984,6 +984,10 @@ section {
   transform: scale(1.1);
 }
 
+.services-portfolio {
+  height: 400px !important
+}
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
