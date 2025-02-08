@@ -41,7 +41,7 @@ nav {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 1rem 2rem 0 0;
 }
 
 .logo {
@@ -51,7 +51,7 @@ nav {
 }
 
 .logo img {
-  height: 40px;
+  height: 60px;
   width: auto;
 }
 
@@ -117,13 +117,13 @@ nav {
               url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80');
   background-size: cover;
   background-position: center;
-  height: 42vh;
+  height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
-  padding-top: 60px;
+  padding-top: 100px;
   margin-bottom: 0;
 }
 
@@ -333,7 +333,7 @@ nav {
 footer {
   background-color: var(--primary-color);
   color: white;
-  padding: 4rem 2rem 0;
+  padding: 2rem 2rem 0;
 }
 
 .footer-content {
@@ -341,12 +341,12 @@ footer {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding-bottom: 3rem;
+  gap: 1rem;
+  padding-bottom: 1rem;
 }
 
 .footer-section h3 {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   margin-bottom: 1.5rem;
   color: var(--secondary-color);
 }
