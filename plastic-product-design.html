@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plastic Product Design - JUFANDO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content">
+        <div class="logo">
+          <img src="assets/img/JUFANDO Logo-Final-1b.png" alt="JUFANDO">
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="#" class="services-dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="plastic-product-design.html">Plastic Product Design</a></li>
+              <li><a href="injection-mould-design.html">Injection Mould Design</a></li>
+            </ul>
+          </li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="service-page">
+      <div class="container">
+        <h1>Plastic Product Design</h1>
+        
+        <!-- Slider main container -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/services/1-ppd.jpg" alt="Product Design 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/services/2-ppd.jpg" alt="Product Design 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/services/4-ppd.jpg" alt="Product Design 3">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="service-content">
+          <h3>JUFANDO crafts plastic products and parts to achieve end users' and client's specific requirements and to manufacture using injection moulding process.</h3>
+          <p>We can bring your ideas to reality in areas of:</p>
+          
+          <ul>
+              <li>Plastics Consultancy (Concept development, Plastic product and component design for injection moulding)</li>
+              <li>Metal-to-Plastic product conversion</li>
+              <li>Finite Element Analysis (FEA)</li>
+              <li>Product and component drawings and solid models with material specifications</li>
+              <li>Support to Start-up Product Developments</li>
+              <li>Prototyping support (subcontracted to renown third parties) - 3D fused deposition modelling machine (FDM), CNC machining to SLA, FDM, and SLS</li>
+              <li>Design for Manufacture (DfM), Reliability (DfR), Safety (DfS) and Environment (DfE)</li>
+          </ul>
+          <p>Developing a customised and fit-for-purpose plastic product is a creative process. This process needs to consider special requirements for plastic products such as plastic material selection, functionality of the part, precession required, integrity-toughness-stiffness, and finally injection mould-ability on top of efficient moulding cycle time for high-volume production and cost of final product.</p>
+
+          <p>JUFANDO designs such products drawing our deep engineering expertise, years of extensive experience and innovation.</p>
+
+          <p>Plastic part design is one of the most multifaceted design processes. It involves factors like melt flow rate, shrinkage, wall thickness, rib design, boss design, drafts, corner transition, etc. These factors could be competing as well and trade-offs are required.</p>
+
+          <p>We know commodity, engineering and high performing/speciality plastics and how to get a part from them.</p>
+          <p>Do you need a plastic part / product get designed?.</p>
+          
+          <div class="talk-to-us">
+            <a href="contact-us.html" class="talk-button">Talk to Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@jufando.com.au</p>
+          <p>Phone: +61 0400 000 000</p>
+          <p>ABN: 00 000 000 000</p>
+        </div>
+        <div class="footer-section">
+          <h3>Address</h3>
+          <p>PO Box XX Wyndham Vale VIC 3024</p>
+          <p>Australia</p>
+        </div>
+        <div class="footer-section">
+          <h3>Hours</h3>
+          <p>Monday - Friday: 9am - 5pm</p>
+          <p>Saturday - Sunday: Closed</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 JUFANDO. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+          delay: 3000,
+        },
+      });
+    </script>
+  </body>
+</html>
