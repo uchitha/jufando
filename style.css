@@ -115,7 +115,7 @@ nav {
 /* Hero Section */
 .hero {
   background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)),
-              url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80');
+              url('assets/img/main-1.jpeg');
   background-size: cover;
   background-position: center;
   height: 35vh;
@@ -134,12 +134,13 @@ nav {
 }
 
 .hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
   line-height: 1.2;
-  letter-spacing: 1px;
-  font-weight: 800;
+  letter-spacing: 1.5px;
+  font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: white;
 }
 
 .hero p {
@@ -168,6 +169,14 @@ nav {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
+
+.service-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
 
 .service-card:hover {
   transform: translateY(-5px);
