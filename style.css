@@ -118,7 +118,6 @@ nav {
               url('assets/img/main-1.jpeg');
   background-size: cover;
   background-position: center;
-  height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +129,7 @@ nav {
 
 .hero-content {
   max-width: 700px;
-  padding: 0 2rem;
+  padding: 0 5rem;
 }
 
 .hero h1 {
