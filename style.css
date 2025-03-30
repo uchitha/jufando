@@ -118,14 +118,22 @@ nav {
               url('assets/img/main-1.jpeg');
   background-size: cover;
   background-position: center;
-  height: 35vh;
+  min-height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
-  padding-top: 100px;
+  padding: 80px 20px 20px;
   margin-bottom: 0;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto; /* Let content determine height on mobile */
+    padding: 130px 15px 20px; /* Reduced padding for mobile */
+  }
 }
 
 .hero-content {
