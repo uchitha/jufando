@@ -338,6 +338,14 @@ nav {
   object-fit: cover;
 }
 
+.swiper-slide img.pam-crop-focus {
+  object-position: center 68%;
+}
+
+.swiper-slide img.pam-2-crop-focus {
+  object-position: 72% 50%;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--primary-color);
