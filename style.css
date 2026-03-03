@@ -19,6 +19,9 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
 }
 
 .container {
@@ -49,6 +52,11 @@ nav {
   color: white;
   font-size: 1.4rem;
   font-weight: bold;
+}
+
+.logo a {
+  display: inline-block;
+  line-height: 0;
 }
 
 .logo img {
@@ -159,15 +167,26 @@ nav {
 
 /* Services Section */
 #services {
-  padding: 1rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 0;
   background-color: #f8f9fa;
+}
+
+#services .container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
   margin-top: 0;
+  flex: 1;
 }
 
 .service-card {
@@ -176,12 +195,17 @@ nav {
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .service-card-link {
   text-decoration: none;
   color: inherit;
   display: block;
+  height: 100%;
   transition: transform 0.3s ease;
 }
 
@@ -192,36 +216,40 @@ nav {
 
 .service-image {
   width: 100%;
-  height: 200px;
+  flex: 1;
+  min-height: 0;
   object-fit: cover;
+  display: block;
 }
 
-.service-content {
-  padding: 1.5rem;
-}
-
-.service-content h3 {
+.service-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
   color: var(--primary-color);
-  margin-bottom: 0.75rem;
-  font-size: 1.2rem;
+  padding: 0.5rem 0.75rem;
 }
 
-.service-content p {
-  margin-bottom: 0.75rem;
+.service-card .service-overlay h3 {
+  color: var(--primary-color);
   font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 /* Differentiators Section */
 .differentiators {
-  margin: 1.5rem 0;
-  padding: 1rem 0;
+  margin: 0.75rem 0;
+  padding: 0.5rem 0;
   background: linear-gradient(to right, rgba(0, 176, 240, 0.05), rgba(0, 176, 240, 0.1), rgba(0, 176, 240, 0.05));
 }
 
 .differentiators-container {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.75rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -229,7 +257,7 @@ nav {
 
 .differentiator-item {
   flex: 1;
-  padding: 1rem 0.75rem;
+  padding: 0.5rem 0.5rem;
   text-align: center;
   background-color: white;
   border-radius: 8px;
@@ -257,7 +285,8 @@ nav {
 /* Talk to Us Button */
 .talk-to-us {
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .talk-button {
@@ -359,7 +388,7 @@ nav {
 footer {
   background-color: var(--primary-color);
   color: white;
-  padding: 2rem 2rem 0;
+  padding: 0.75rem 2rem 0;
 }
 
 .footer-content {
@@ -367,30 +396,30 @@ footer {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  padding-bottom: 1rem;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .footer-section h3 {
-  font-size: 1.0rem;
-  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
   color: var(--tertiary-color);
 }
 
 .footer-section p {
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
   color: #ecf0f1;
 }
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1.5rem 0;
+  padding: 0.5rem 0;
   text-align: center;
 }
 
 .footer-bottom p {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: #bdc3c7;
 }
 
@@ -542,7 +571,7 @@ footer {
   }
 
   .services-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer-content {
